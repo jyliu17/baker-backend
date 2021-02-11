@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2021_02_11_162259) do
     t.string "location"
     t.string "contact"
     t.string "profile_image"
-    t.string "sample"
     t.string "expertise"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

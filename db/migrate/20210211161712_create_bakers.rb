@@ -5,7 +5,6 @@ class CreateBakers < ActiveRecord::Migration[6.0]
       t.string :location
       t.string :contact
       t.string :profile_image
-      t.string :sample
       t.string :expertise
 
       t.timestamps
