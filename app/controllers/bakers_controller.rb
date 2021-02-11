@@ -1,5 +1,10 @@
 class BakersController < ApplicationController
 
+    def index
+        bakers = Baker.all
+        render json: bakers
+    end
+
     def create
     baker = Baker.create(baker_params)
     render json: baker
