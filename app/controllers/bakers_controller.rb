@@ -5,6 +5,11 @@ class BakersController < ApplicationController
         render json: bakers
     end
 
+    # def bakerPastries
+    #     pastries = Baker.pastries
+    #     render json: pastries
+    # end
+
     def create
     baker = Baker.create(baker_params)
     render json: baker

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  # /
   resources :users, only: [:create, :show]
   resources :pastries, only: [:index, :create, :show]
   resources :favorites, only: [:index, :create, :destroy]

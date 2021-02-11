@@ -1,7 +1,7 @@
 class PastriesController < ApplicationController
 
     def index
-        pastries = Pastries.all
+        pastries = Pastry.all
         render json: pastries
     end
  
