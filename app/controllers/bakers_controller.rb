@@ -21,6 +21,16 @@ class BakersController < ApplicationController
         render json: baker
     end 
 
+
+#   def show
+#     project = Project.find_by(id: params[:id])
+#     if project
+#       render json: project
+#     else
+#       render json: { error: "Project not found" }, status: :not_found
+#     end
+#   end
+
     def update
         baker = Baker.find(params[:id])
         baker.update(baker_params)
