@@ -1,3 +1,3 @@
 class FavoriteSerializer < ActiveModel::Serializer
-    attributes :user_id, :baker_id
+    attributes :id, :user_id, :baker_id, :baker
 end
