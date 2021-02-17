@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # /
-  resources :users, only: [:create]
+  resources :users, only: [:index, :show, :create]
   resources :pastries, only: [:index, :create, :show]
   resources :favorites, only: [:index, :create, :destroy]
   resources :bakers, only: [:index, :create, :update, :show]
