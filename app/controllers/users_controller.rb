@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         # get the username and password from params
         #lookup a user with their username and password
         #otherwise return some error
-        user = User.find_by(params[:password])
+        user = User.find_by(username: params[:username])
         if user && user.authenticate(params[:password])
         #fake auth
         render json: user
