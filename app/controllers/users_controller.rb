@@ -18,11 +18,19 @@ class UsersController < ApplicationController
         render json: {errors:["Invalid username or password"]}
         end
     end
- 
-    def create
+
+    def signup
         @user = User.create(user_params)
+        if @user.valid?
         render json: @user
+        else
+         render json: {errors: @user.errors.full_messages}
+        end
     end
+ 
+    # def create
+        
+    # end
 
     def show 
         user = User.find_by(params[:password])
