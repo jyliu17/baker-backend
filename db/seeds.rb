@@ -16,10 +16,10 @@ Baker.create(name: "Candice Brown", location: "SF, Mission District", contact: "
 Baker.create(name: "Nadiya Hussain", location: "LA, Santa Monica", contact: "jen@gmail.com", profile_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNfzfMiv6pA0wUpa5xYzVuRjMAKX75lMYauQ&usqp=CAU", expertise: "Chocolate Bars")
 
 # ************FAVORITES***************
-Favorite.create(user_id: 1, baker_id: 1)
-Favorite.create(user_id: 1, baker_id: 2)
-Favorite.create(user_id: 2, baker_id: 2)
-Favorite.create(user_id: 2, baker_id: 3)
+# Favorite.create(user_id: 1, baker_id: 1)
+# Favorite.create(user_id: 1, baker_id: 2)
+# Favorite.create(user_id: 2, baker_id: 2)
+# Favorite.create(user_id: 2, baker_id: 3)
 
 # ************PASTRIES***************
 Pastry.create(baker_id: 1, name: "Birthday Cake", description: "Disney Theme Cake", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPbQAJGh-oeW_inDwYn51vpLaCgR0VK5YWng&usqp=CAU")
